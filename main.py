@@ -2,6 +2,7 @@ from flask import Flask
 from firebase import firebase
 from pyfcm import FCMNotification
 import json
+import os
 
 app = Flask(__name__)
 db = firebase.FirebaseApplication("https://sms-system-tarp.firebaseio.com",None)
@@ -33,4 +34,6 @@ def push():
 	res = push_service.notify_single_device(registration_id=reg_id,message_title=title,message_body=body)
 	print(res)
 
-app.run(host='0.0.0.0')
+if __name__ == "__main__":
+	port = int(os.environ.get("PORT",5000))
+	app.run(host='0.0.0.0',port=port)
