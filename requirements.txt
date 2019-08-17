@@ -54,7 +54,6 @@ requests==2.21.0
 requests-file==1.4.3
 requests-ftp==0.3.1
 requests-toolbelt==0.9.1
-rpm==4.14.2.1
 rsa==4.0
 sepolicy==1.1
 setools==4.1.1
