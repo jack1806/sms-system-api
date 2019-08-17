@@ -7,7 +7,6 @@ import os
 app = Flask(__name__)
 db = firebase.FirebaseApplication("https://sms-system-tarp.firebaseio.com",None)
 push_service = FCMNotification(api_key="AAAAdRC7uZ0:APA91bES_ElPLByHD-nlX6J9doi9OOObvGfmQ-SS_qYCuO4alEAbZXdnZjNejLuCez5z_Od1NLS8RmnEWVWA3JEU-799_m7iYD90JF8jaZMBddWSsXz5s__dKzc_klVsgLoRUEf2lgYh")
-reg_id = db.get('/reg',None)
 
 @app.route('/')
 def index():
@@ -28,6 +27,7 @@ def add_leave_request():
 	return "{'status':500}"
 
 def push(put_data):
+	reg_id = db.get('/reg',None)
 	title = "Send SMS"
 	body = json.dumps(put_data)
 	res = push_service.notify_single_device(registration_id=reg_id,message_title=title,message_body=body)
