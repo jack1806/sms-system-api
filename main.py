@@ -33,6 +33,5 @@ def push():
 	res = push_service.notify_single_device(registration_id=reg_id,message_title=title,message_body=body)
 	print(res)
 
-if __name__ == "__main__":
-	app.run()
+app.run()
 
