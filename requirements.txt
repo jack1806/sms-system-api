@@ -38,7 +38,6 @@ pycups==1.9.74
 pycurl==7.43.0.2
 pydbus==0.6.0
 pyfcm==1.4.7
-PyGObject==3.32.0
 pyinotify==0.9.6
 pykickstart==3.20
 pyOpenSSL==19.0.0
