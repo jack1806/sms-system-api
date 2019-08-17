@@ -29,8 +29,7 @@ def add_leave_request():
 def push(put_data):
 	reg_id = db.get('/reg',None)
 	title = "Send SMS"
-	body = json.dumps(put_data)
-	res = push_service.notify_single_device(registration_id=reg_id,message_title=title,message_body=body,data_message=body)
+	res = push_service.notify_single_device(registration_id=reg_id,data_message=put_data)
 	print(res)
 
 if __name__ == "__main__":
