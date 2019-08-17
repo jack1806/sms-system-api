@@ -1,4 +1,4 @@
-sn1crypto==0.24.0
+asn1crypto==0.24.0
 cryptography==2.6.1
 firebase==3.0.1
 Flask==1.1.1
