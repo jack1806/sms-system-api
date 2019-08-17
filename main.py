@@ -19,7 +19,7 @@ def add_leave_request():
 	f_sender = request.form.get('sender_id')
 	f_till = request.form.get('till')
 	f_number = request.form.get('to_number')
-	put_data = {'from':f_from,'reason':f_reason,'sender_id':f_sender,'status':0,'till':f_till,'to_number':f_number}
+	put_data = {'f_from':f_from,'f_reason':f_reason,'f_sender_id':f_sender,'f_status':'0','f_till':f_till,'F-to_number':f_number}
 	put_id = db.post('/data',data=put_data,params={'print': 'pretty','X_FANCY_HEADER': 'VERY FANCY'})
 	if(put_id!=None):
 		push(put_data)
