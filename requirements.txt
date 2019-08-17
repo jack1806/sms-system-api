@@ -43,7 +43,6 @@ pyasn1==0.4.6
 pyasn1-modules==0.2.6
 pycairo==1.18.0
 pycparser==2.14
-pycrypto==2.6.1
 pycups==1.9.74
 pycurl==7.43.0.2
 pydbus==0.6.0
@@ -78,5 +77,4 @@ sos==3.7
 sseclient==0.0.24
 systemd-python==234
 Tempita==0.5.1
-urllib3==1.24.1
 Werkzeug==0.15.5
