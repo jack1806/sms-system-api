@@ -52,7 +52,7 @@ requests==2.21.0
 requests-file==1.4.3
 requests-ftp==0.3.1
 requests-toolbelt==0.9.1
-rsa==4.0
+rsa==4.7
 six==1.12.0
 sseclient==0.0.24
 systemd-python==234
