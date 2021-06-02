@@ -57,5 +57,5 @@ six==1.12.0
 sseclient==0.0.24
 systemd-python==234
 Tempita==0.5.1
-urllib3==1.24.1
+urllib3==1.26.5
 Werkzeug==0.15.5
