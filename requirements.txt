@@ -25,7 +25,7 @@ olefile==0.46
 ordered-set==2.0.2
 Paste==2.0.3
 pid==2.2.3
-Pillow==5.4.1
+Pillow==8.2.0
 ply==3.11
 productmd==1.21
 protobuf==3.9.1
