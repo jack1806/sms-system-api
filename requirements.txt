@@ -28,7 +28,7 @@ pid==2.2.3
 Pillow==5.4.1
 ply==3.11
 productmd==1.21
-protobuf==3.9.1
+protobuf==3.15.0
 pyasn1==0.4.6
 pyasn1-modules==0.2.6
 pycairo==1.18.0
